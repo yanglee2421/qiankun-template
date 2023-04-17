@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mvc</title>
+  </head>
+  <body>
+    Mvc
+  </body>
+  <script entry>
+    const render = () => {
+      console.log("mvc");
+      return Promise.resolve();
+    };
+
+    ((global) => {
+      global["purehtml"] = {
+        bootstrap: () => {
+          console.log("purehtml bootstrap");
+          return Promise.resolve();
+        },
+        mount: () => {
+          console.log("purehtml mount");
+          return render();
+        },
+        unmount: () => {
+          console.log("purehtml unmount");
+          return Promise.resolve();
+        },
+      };
+    })(window);
+  </script>
+</html>
