@@ -44,7 +44,7 @@ function microApps(): RegistrableApp<ObjectType>[] {
     },
     {
       name: "mvc",
-      entry: "//localhost:5500",
+      entry: "//localhost:4399",
       container: "#container",
       activeRule: "/mvc",
     },
