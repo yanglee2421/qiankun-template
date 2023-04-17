@@ -16,10 +16,16 @@ console.log(vueImg);
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <p>sss</p>
+  <div class="app__footer"></div>
 </template>
 
 <style scoped>
+.app__footer {
+  border: 1px red solid;
+  height: 4rem;
+  aspect-ratio: 1 / 1;
+  background-image: url("@/assets/vue.svg");
+}
 .logo {
   height: 6em;
   padding: 1.5em;
